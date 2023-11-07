@@ -89,7 +89,8 @@ public class Arithmetics {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World");
-
+		
+		while(true) {
 		System.out.println(("1. Addition"));
 		System.out.println(("2. Subtraction"));
 		System.out.println(("3. Multiplication"));
@@ -100,9 +101,10 @@ public class Arithmetics {
 		System.out.println("8. Circle Perimeter");
 		System.out.println("9. Exit");
 		System.out.println("Welcome to Arithmetics, Choose an option:");
-
 		Scanner sc = new Scanner(System.in);
 		int option = sc.nextInt();
+		
+		}
 
 		switch (option) {
 			case 1:
@@ -153,6 +155,7 @@ public class Arithmetics {
 				int h =sc.nextInt();
 				Triangle tr = new Triangle();
 				System.out.println("The area of the triangle is" + " " + tr.tri(y,h));
+				break;
 				
 			case 7:
 				System.out.println("Enter the radius:");
