@@ -37,11 +37,33 @@ class Division {
 		div = a / b;
 		return div;
 	}
+	class Subtraction{
+
+		int k;
+		int l;
+		int sub;
+	
+	public int Sub(int a,int b){
+  Sub=a-b;
+  return sub;
+	}
+	}
+	class Rectangle{
+		int l;
+		int w;
+
+		public int per(int l,int w){
+			per=2*(l+w)
+			return per;
+		}
+	}
 }
 
 public class Arithmetics {
 
 	public static void main(String[] args) {
+		System.out.println("Hello World");
+		
 		System.out.println(("1. Addition"));
 		System.out.println(("2. Subtraction"));
 		System.out.println(("3. Multiplication"));
