@@ -37,23 +37,26 @@ class Division {
 		div = a / b;
 		return div;
 	}
-	class Subtraction{
+
+	class Subtraction {
 
 		int k;
 		int l;
 		int sub;
-	
-	public int Sub(int a,int b){
-  Sub=a-b;
-  return sub;
+
+		public int Sub(int a, int b) {
+			sub = a - b;
+			return sub;
+		}
 	}
-	}
-	class Rectangle{
+
+	class Rectangle {
 		int l;
 		int w;
+		int per;
 
-		public int per(int l,int w){
-			per=2*(l+w)
+		public int per(int l, int w) {
+			per = 2 * (l + w);
 			return per;
 		}
 	}
@@ -63,7 +66,7 @@ public class Arithmetics {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World");
-		
+
 		System.out.println(("1. Addition"));
 		System.out.println(("2. Subtraction"));
 		System.out.println(("3. Multiplication"));
@@ -86,7 +89,7 @@ public class Arithmetics {
 				int b = sc.nextInt();
 				Addition add = new Addition();
 				int results = add.Add(a, b);
-				System.out.println("The sum is" + results);
+				System.out.println("The sum is" + " " + results);
 				break;
 
 			default:
