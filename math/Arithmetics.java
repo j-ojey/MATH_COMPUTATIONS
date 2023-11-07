@@ -33,19 +33,20 @@ class Division {
 	int j;
 	int div;
 
-	public int Div(int a, int b) {
-		div = a / b;
+	public int Div(int e, int f) {
+		div = e / f;
 		return div;
 	}
 
-	class Subtraction {
+}
+class Subtraction {
 
 		int k;
 		int l;
 		int sub;
 
-		public int Sub(int a, int b) {
-			sub = a - b;
+		public int Sub(int c, int d) {
+			sub = c - d;
 			return sub;
 		}
 	}
@@ -60,8 +61,6 @@ class Division {
 			return per;
 		}
 	}
-}
-
 public class Arithmetics {
 
 	public static void main(String[] args) {
@@ -91,7 +90,26 @@ public class Arithmetics {
 				int results = add.Add(a, b);
 				System.out.println("The sum is" + " " + results);
 				break;
+				
+			case 2:
 
+				System.out.println("Enter first number");
+				int c=sc.nextInt();
+				System.out.println("Enter the second number");
+				int d=sc.nextInt();
+				Subtraction sub = new Subtraction();
+				int result=sub.Sub(c, d);
+				System.out.println("Your answer is"+result);
+				break;
+				
+			case 3:
+				System.out.println("Enter the first number");
+				int  e=sc.nextInt();
+				System.out.println("Enter the second number");
+				int f=sc.nextInt();
+				Division div=new Division();
+				int answer=div.Div(e, f);
+				System.out.println("Result:"+answer);
 			default:
 				break;
 		}
