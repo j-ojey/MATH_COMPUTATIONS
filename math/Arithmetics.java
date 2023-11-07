@@ -110,6 +110,16 @@ public class Arithmetics {
 				Division div=new Division();
 				int answer=div.Div(e, f);
 				System.out.println("Result:"+answer);
+
+			case 5:
+				System.out.println("Enter the length of the rectangle");
+				int l = sc.nextInt();
+				System.out.println("Enter the width of the rectangle");
+				int w = sc.nextInt();
+				Rectangle rec = new Rectangle();
+				int perimeter = rec.per(l, w);
+				System.out.println("The perimeter of the rectangle is" + " " + perimeter);
+				break;	
 			default:
 				break;
 		}
