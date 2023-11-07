@@ -61,6 +61,30 @@ class Subtraction {
 			return per;
 		}
 	}
+	
+	class Circle{
+		double r;
+		double pi=3.142;
+		double area;
+		 public double are(double r) {
+			 double d = pi*r;
+			 area= d*r;
+			 return area;
+		 }
+	}
+	
+	class Triangle{
+		int y;
+		int h;
+		int area;
+		
+		public int tri(int y, int h){
+			area=(int) 0.5*y*h;
+			return area;
+			
+		}
+	}
+	
 public class Arithmetics {
 
 	public static void main(String[] args) {
@@ -110,6 +134,7 @@ public class Arithmetics {
 				Division div=new Division();
 				int answer=div.Div(e, f);
 				System.out.println("Result:"+answer);
+				break;
 
 			case 5:
 				System.out.println("Enter the length of the rectangle");
@@ -119,7 +144,25 @@ public class Arithmetics {
 				Rectangle rec = new Rectangle();
 				int perimeter = rec.per(l, w);
 				System.out.println("The perimeter of the rectangle is" + " " + perimeter);
-				break;	
+				break;
+	
+			case 6:
+				System.out.println("Enter the base:");
+				int y = sc.nextInt();
+				System.out.println("Enter the height:");
+				int h =sc.nextInt();
+				Triangle tr = new Triangle();
+				System.out.println("The area of the triangle is" + " " + tr.tri(y,h));
+				
+			case 7:
+				System.out.println("Enter the radius:");
+				int r= sc.nextInt();
+				Circle cir = new Circle();
+				System.out.println("The area of the circle is" + " " + cir.are(r));
+				break;
+				
+				
+				
 			default:
 				break;
 		}
