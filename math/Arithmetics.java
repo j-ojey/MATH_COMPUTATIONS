@@ -94,6 +94,17 @@ class CirclePerimeter
 		return circ;
 	}
 }
+
+class CirclePeri {
+	double pi=3.142;
+	double r;
+	double per;
+	public double per(double r) {
+		double d=2*r;
+		per=pi*d;
+		return per;
+	}
+}
 public class Arithmetics {
 
 	public static void main(String[] args) {
@@ -110,7 +121,8 @@ public class Arithmetics {
 			System.out.println("6. Triangle Area");
 			System.out.println("7. Circle Area");
 			System.out.println("8. Circle Perimeter");
-			System.out.println("9. Exit");
+			System.out.println("9. Circle Peri");
+			System.out.println("10. Exit");
 			System.out.println("Welcome to Arithmetics, Choose an option:");
 
 			int option = sc.nextInt();
@@ -190,8 +202,16 @@ public class Arithmetics {
 					CirclePerimeter circlePerimeter = new CirclePerimeter();
 					System.out.println("The circumfrence of the circle is" + " " + circlePerimeter.circumfrence(radius) + "\n");
 					break;
-
+					
 				case 9:
+					System.out.println("Enter the radius:");
+					double r1 = sc.nextDouble();
+					CirclePeri circlePer = new CirclePeri();
+					System.out.println("The circumfrence of the circle is" + " " + circlePer.per(r1) + "\n");
+					break;
+					
+
+				case 10:
 					isRunning = false;
 					break;
 				default:
